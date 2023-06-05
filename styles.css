@@ -5,6 +5,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
   }
   
   header {
@@ -15,6 +17,8 @@ body {
   
   header h1 {
     margin: 0;
+    font-size: 36px;
+    text-transform: uppercase;
   }
   
   nav ul {
@@ -31,6 +35,12 @@ body {
   nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #aaa;
   }
   
   main {
@@ -47,6 +57,7 @@ body {
   /* Estilos específicos para la página principal */
   #descripcion {
     margin-top: 30px;
+    text-align: justify;
   }
   
   /* Estilos específicos para la página de agenda de turnos */
@@ -57,6 +68,7 @@ body {
   form label {
     display: block;
     margin-bottom: 5px;
+    color: #333;
   }
   
   form input[type="text"],
@@ -67,6 +79,9 @@ body {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #333;
   }
   
   form input[type="submit"] {
@@ -74,9 +89,18 @@ body {
     color: #fff;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s ease;
   }
   
   form input[type="submit"]:hover {
     background-color: #555;
+  }
+  
+  /* Estilos para imágenes */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
   }
   
